@@ -1,0 +1,66 @@
+.open-modal {
+  outline: none;
+}
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(221, 221, 221, 0.6);
+  /* overflow: auto; */
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+}
+
+.modal__content {
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 5px 5px 25px 0px #6b6b6b;
+  padding: 30px;
+  margin: 50vh auto;
+  transform: translateY(-50%);
+  /* для анимации */
+  position: relative;
+  animation-name: animfromtop;
+  animation-duration: 0.5s;
+}
+
+.modal__content h2 {
+  margin-bottom: 30px;
+}
+
+.modal_active {
+  display: block;
+}
+
+.modal__close {
+  display: block;
+  text-align: right;
+  font-size: 2.5rem;
+  /* line-height: 4rem; */
+  float: right;
+  margin-top: -20px;
+  cursor: pointer;
+  color: #a3a3a3;
+}
+
+.modal__close:hover {
+  color: #000;
+}
+
+@keyframes animfromtop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .modal__content {
+    width: 75%;
+  }
+}
