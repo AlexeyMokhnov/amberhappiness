@@ -1,0 +1,270 @@
+.dogs
+    width: 100%
+    height: 920px
+    background-color: $main_third
+    padding: 133px 0 37px 0
+    .container
+        max-width: 1333px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    .swiper-container-dogs-content
+        .swiper-wrapper
+            display: block
+            .swiper-slide
+                position: absolute
+                top: 0
+                left: 0
+    &__content
+        width: 1020px
+        height: 700px
+        background-color: $light
+        position: relative
+        overflow: hidden
+        +box_shadow_main
+        &-item
+            position: absolute
+            left: 0
+            top: 0
+            opacity: 0
+            transform: translateX(1000px)
+            padding: 20px 6.37% 16px 6.078%
+            display: flex
+        .active
+            transition: all 250ms
+            opacity: 1
+            transform: translateX(0)
+            position: static
+        .swiper-pagination,
+        .swiper-button-prev,
+        .swiper-button-next
+            display: none
+    &__photo-frame
+        position: relative
+        max-width: 550px
+        height: 550px
+        padding: 25px
+        +box_shadow_main
+    &__photo
+        height: 100%
+    &__ribbon-wrapper
+        position: absolute
+        top: 25px
+        left: 25px
+        overflow: hidden
+        width: 240px
+        height: 240px
+    &__ribbon
+        position: absolute
+        top: 61px
+        left: -67px
+        width: 300px
+        height: 50px
+        line-height: 50px
+        font-size: 16px
+        font-weight: 700
+        text-align: center
+        text-transform: uppercase
+        transform: rotate(-45deg)
+        color: $dogs_title_man
+        background-color: $light
+        opacity: 0.5
+    &__info
+        width: 310px
+        color: $main_second
+        font-size: 18px
+        line-height: 30px
+        margin-left: 34px
+        margin-top: 28px
+    &__character-frame
+        position: absolute
+        bottom: -110px
+        right: -340px
+        width: 450px
+        height: 350px
+        background-color: $main_third
+        padding: 25px
+    &__character-text
+        color: $main_second
+        font-size: 18px
+        line-height: 30px
+        position: relative
+        background-color: $light
+        width: 100%
+        height: 100%
+        text-align: center
+        padding: 65px 50px 94px 50px
+        p
+            position: relative
+            z-index: 2
+    &__paw
+        position: absolute
+        right: 27px
+        bottom: 10px
+        width: 96px
+        height: 113px
+        z-index: 0
+    &__title
+        color: $dogs_title_man
+        font-size: 18px
+        text-transform: uppercase
+        font-family: "Montserrat"
+        font-weight: 900
+    &__description
+    &__pedigree,
+    &__instagram-wrapper
+        height: 50px
+        width: 275px
+        border-radius: 25px
+        border: 3px solid $main
+        text-decoration: none
+        display: flex
+        justify-content: center
+        align-items: center
+        color: $main_second
+        margin-left: 34px
+        margin-top: 19px
+        transition: 0.3s all
+        &:hover
+            +box_shadow_main_bottom
+            cursor: pointer
+    &__instagram-wrapper
+        border: none
+        padding: 3px
+        border-radius: 25px
+        background: linear-gradient(0deg, rgba(233,165,165,1) 0%, rgba(184,193,192,1) 25%, rgba(101,192,224,1) 50%, rgba(174,162,219,1) 75%, rgba(129,193,217,1) 100%)
+        margin-top: 30px
+    &__instagram
+        width: 100%
+        height: 100%
+        border-radius: 22px
+        background: $light
+        display: flex
+        justify-content: center
+        align-items: center
+    &__tabs
+        margin-left: 20px
+    &-slider
+        padding: 0
+        position: relative
+        .swiper-button-prev
+            padding: 0
+            padding-left: 10px
+            justify-content: start
+            height: 250px
+            width: 80px
+            top: -65px
+            bottom: auto
+            right: auto
+            left: 50%
+            transform: translateX(-50%) rotate(90deg)
+            background: linear-gradient(90deg, #fff 0%, #fff 50%, rgba(255,255,255,0) 100%)
+        .swiper-button-next
+            padding: 0
+            padding-right: 10px
+            height: 250px
+            width: 80px
+            top: auto
+            bottom: -90px
+            left: 50%
+            right: auto
+            transform: translateX(-50%) rotate(90deg)
+            background: #fff
+            background: linear-gradient(270deg, #fff 0%, #fff 50%, rgba(255,255,255,0) 100%)
+            justify-content: flex-end
+        .swiper-button-prev::after,
+        .swiper-button-next::after
+            font-size: 47px
+            color: $main_third
+        .swiper-container-dogs
+            background-color: $light
+            width: 250px
+            height: 700px
+            padding: 45px 25px
+            margin: 0
+            position: relative
+            overflow: hidden
+            list-style: none
+            z-index: 1
+            +box_shadow_main
+        .swiper-wrapper
+            .swiper-slide
+
+        .dogs__tabs-item
+            position: relative
+            width: 200px
+            height: 200px
+            background-color: $main_third
+            padding: 12.5px
+            z-index: 1
+            transition: 0.3s all
+            &:hover .dogs__tabs-item-back
+                cursor: pointer
+                visibility: visible
+            img
+                height: 100%
+            &-back
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background-color: $main_third
+                opacity: 0.7
+                visibility: hidden
+                display: flex
+                justify-content: center
+                align-items: center
+                color: $dogs_title_man
+                font-size: 18px
+                text-transform: uppercase
+                ont-family: "Montserrat"
+                font-weight: 900
+.bnr.container
+    max-width: 1333px
+.bnr
+    margin-top: 50px
+    &__wrapper
+        width: 100%
+        height: 400px
+        background-color: $light
+        padding: 25px
+        +box_shadow_main
+    &__frame
+        width: 100%
+        height: 100%
+        padding: 25px
+        background-color: $main_third
+        +box_shadow_main
+    &__bg
+        height: 100%
+        background: url(../img/dogs/bnr-bg1.png) no-repeat
+        display: flex
+        justify-content: flex-end
+    &__info
+        width: 30%
+        display: flex
+        flex-direction: column
+    &__title
+        display: flex
+        flex-direction: column
+        align-items: start
+        font-weight: 900
+        font-size: 36px
+        line-height: 60px
+        color: $light
+        text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3)
+        span
+            font-family: "Montserrat", "Nunito", sans-serif
+            &:last-child
+                align-self: flex-end
+    .main-btn
+        background-color: $light
+        font-size: 24px
+        margin-top: 120px
+        align-self: flex-end
+.dogs.girls
+    margin-top: 54px
+    .dogs__title,
+    .dogs__tabs-item-back
+        color: $dogs_title_girl

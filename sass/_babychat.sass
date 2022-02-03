@@ -1,0 +1,51 @@
+body
+    background: none
+.baby-chat
+    height: calc( 100vh - 300px )
+    background-image: url(../img/bg/bg404.png)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    overflow: hidden
+    &__info
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        max-width: 1432px
+        color: $main
+        text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3)
+        font-weight: 900
+        padding: 130px 100px 0 0px
+        margin: 0 auto
+        h2
+            font-size: 48px
+            line-height: 1
+            margin-right: 18px
+    &__discription
+        max-width: 505px
+        font-size: 30px
+        line-height: 48px
+        text-align: center
+        margin-top: 60px
+    &__btn
+        text-decoration: none
+        text-transform: uppercase
+        display: flex
+        justify-content: center
+        align-items: center
+        text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3)
+        color: $light
+        font-size: 24px
+        font-weight: 900
+        line-height: 48px
+        width: 350px
+        height: 60px
+        box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.3)
+        border-radius: 30px
+        background-color: $main_btn
+        transition: 0.5s background-color
+        margin-top: 60px
+        margin-right: 65px
+        +main_btn_hover
+.footer
+    margin-top: 0

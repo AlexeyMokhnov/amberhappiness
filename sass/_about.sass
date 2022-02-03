@@ -1,0 +1,185 @@
+body
+    color: $main_second
+.container
+    max-width: 980px
+.about
+    width: 100%
+    background-color: $main_third
+    padding-top: 89px
+    padding-bottom: 50px
+    box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.3)
+    &__wrapper
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: minmax(200px, 300px) minmax(200px, 300px) 60px
+        grid-template-areas: "health photo-frame-1 fiance" "photo-frame-2 open photo-frame-3" "buttons buttons buttons"
+        gap: 20px
+    &__health
+        grid-area: health
+        height: 300px
+        padding: 25px
+        background-color: $light
+        +box_shadow_main
+        &-discription
+            position: relative
+            background-color: $main_third
+            width: 100%
+            height: 100%
+            padding: 12px
+            z-index: 1
+            +box_shadow_main
+        &-paw
+            position: absolute
+            left: 10px
+            bottom: 10px
+            width: 92px
+            transform: scale(-1, 1)
+            z-index: 1
+    &__title
+        text-align: center
+        font-size: 18px
+        font-weight: 700
+        line-height: 24px
+        text-transform: uppercase
+        color: $main
+        padding-top: 45px
+    &__text
+        text-align: center
+        position: relative
+        z-index: 2
+        margin-top: 25px
+        font-size: 18px
+        line-height: 24px
+    &__photo-frame-1
+        grid-area: photo-frame-1
+        background-color: $light
+        padding: 12.5px
+        +box_shadow_main
+    &__fiance
+        grid-area: fiance
+        padding: 25px
+        background-color: $light
+        +box_shadow_main
+        &-discription
+            position: relative
+            background-color: $main_third
+            width: 100%
+            height: 100%
+            padding: 5px
+            z-index: 1
+            +box_shadow_main
+    &__paws
+        display: none
+    &__photo-frame-2
+        grid-area: photo-frame-2
+        background-color: $light
+        padding: 12.5px
+        height: 300px
+        margin-top: 20px
+        +box_shadow_main
+    &__open
+        grid-area: open
+        padding: 25px
+        background-color: $light
+        +box_shadow_main
+        &-discription
+            position: relative
+            background-color: $main_third
+            width: 100%
+            height: 100%
+            padding: 5px
+            z-index: 1
+            +box_shadow_main
+    &__photo-frame-3
+        grid-area: photo-frame-3
+        background-color: $light
+        padding: 12.5px
+        +box_shadow_main
+    &__buttons
+        grid-area: buttons
+        display: flex
+        justify-content: center
+        .main-btn
+            background-color: $light
+            &:first-child
+                margin-right: 90px
+.achievements
+    padding-top: 146px
+    &__title
+        font-size: 30px
+        text-align: center
+        font-weight: 400
+        span
+            font-size: 36px
+            font-family: "Montserrat"
+            font-weight: 900
+            color: $main
+    &__items
+        display: flex
+        justify-content: space-around
+        margin-top: 46px
+    &__item
+        display: flex
+        justify-content: space-between
+    &__number
+        color: $main
+        font-family: "Montserrat"
+        font-size: 60px
+        font-weight: 900
+        margin-right: 15px
+    &__text
+        font-size: 24px
+.delivery
+    color: $main_second
+    padding-top: 150px
+    &__paw
+        display: none
+    &__city
+        display: flex
+    &__photo
+        width: 500px
+        height: 300px
+    &__info
+        display: flex
+        position: relative
+    &__square
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        z-index: 0
+        width: 225px
+        height: 235px
+        background-color: $main_third
+    &__description
+        position: relative
+        z-index: 1
+        margin-left: 77px
+        margin-top: 70px
+    &__title
+        width: 392px
+        font-size: 24px
+        font-weight: 700
+        text-transform: uppercase
+    &__text
+        font-size: 18px
+        margin-top: 34px
+        line-height: 27px
+    &__country
+        display: flex
+        margin-top: 69px
+        .delivery__info
+            width: 440px
+        .delivery__square
+            left: auto
+            right: 0
+        .delivery__description
+            text-align: right
+            margin-left: 0
+            margin-right: 45px
+        .delivery__title
+            display: inline-block
+        .delivery__photo
+            background-image: url(../img/about/dog-in-the-car.png)
+.footer
+    margin-top: 80px

@@ -1,0 +1,102 @@
+.container
+    max-width: 1332px
+.contacts
+    background-color: $main_third
+    padding: 88px 0 63px 0
+    +box_shadow_main_bottom
+    &__wrapper
+        display: flex
+    &__block
+        width: 800px
+        min-height: 600px
+        background-color: $light
+        padding-right: 110px
+        margin-bottom: 100px
+        +box_shadow_main
+    &__map-frame
+        height: 600px
+        width: 600px
+        padding: 25px
+        background-color: $main_third
+        margin-left: -110px
+        margin-top: 100px
+        +box_shadow_main
+    &__map
+        height: 100%
+        width: 100%
+    &__title
+        color: $main
+        font-size: 24px
+        font-weight: 700
+        line-height: 1
+        text-transform: uppercase
+        margin: 81px 0 0 70px
+    &__address
+        margin: 62px 0 0 105px
+    &__subtitle
+        font-size: 24px
+        font-weight: 700
+        color: $main_second
+        line-height: 1
+    &__tel,
+    &__mail
+        margin: 66px 0 0 105px
+    &__tel-link,
+    &__mail-link,
+    &__address-link a
+        font-size: 18px
+        color: $main_second
+        text-decoration: none
+        line-height: 24px
+        &:hover
+            text-decoration: underline
+.delivery
+    display: flex
+    justify-content: center
+    &__photo-frame
+        position: relative
+        z-index: 1
+        max-width: 600px
+        max-height: 600px
+        background-color: $main_third
+        padding: 25px
+        +box_shadow_main
+    &__photo
+        transform: scale(-1, 1)
+        height: 100%
+    &__description
+        position: relative
+        z-index: 0
+        max-width: 800px
+        height: 600px
+        background-color: $light
+        padding: 81px 50px 0 200px
+        margin: 100px 0 0 -110px
+        +box_shadow_main
+        p
+            position: relative
+            z-index: 2
+            color: $main_second
+            font-size: 24px
+            line-height: 36px
+            margin-top: 50px
+    &__title
+        width: 300px
+        color: $main
+        font-size: 24px
+        font-weight: 700
+        line-height: 36px
+        text-transform: uppercase
+    &__paw
+        position: absolute
+        z-index: 1
+        bottom: 46px
+        right: 112px
+        width: 285px
+        height: 278px
+        transform: scale(-1, 1)
+        object-fit: contain
+.main-form
+    margin-top: 130px
+    &__policy
+        left: 375px

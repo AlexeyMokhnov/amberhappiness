@@ -1,0 +1,121 @@
+.social
+    padding-top: 6px
+    a
+        height: auto
+        margin-right: 15px
+        color: $main
+        text-decoration: none
+    &__icon
+        display: inline-block
+        width: 40px
+        height: 40px
+        fill: $main
+        &:focus,
+        &:active
+            outline: none
+        &:hover>.use
+            color: $main_third_add
+            border-color: $main_third_add
+            fill: $main_third_add
+.header
+    width: 100%
+    &__wrapper
+        max-width: 1590px
+        height: 100px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0 auto
+        padding: 0 20px
+    .logo
+        position: relative
+        &__link
+            text-decoration: none
+        &__text
+            font-family: Montserrat, san-serif
+            font-weight: 900
+            text-transform: uppercase
+            color: $main
+            font-size: 36px
+            line-height: 1
+            span
+                font-family: inherit
+                display: block
+                margin-left: 25px
+        &__img
+            width: 84px
+            position: absolute
+            top: -3px
+            left: 146px
+    &__call
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        width: 280px
+        height: 40px
+        border-radius: 20px
+        border: 2.3px solid $main
+        border-right: none
+        text-decoration: none
+        font-size: 24px
+        color: $main
+        &:hover
+            color: $main_third_add
+            border-color: $main_third_add
+        span
+            margin-left: 15px
+
+    &__call-icon
+        box-sizing: content-box
+        width: 40px
+        height: 40px
+        position: absolute
+        top: -2.3px
+        right: 0px
+        fill: $main
+        padding-left: 290px
+        &:hover>.use
+            fill: $main_third_add
+    .nav
+        position: absolute
+        right: 50%
+        transform: translateX(-50%)
+        display: flex
+        justify-content: center
+        z-index: 2
+        .hamburger
+            display: none
+        &__wrapper
+            position: absolute
+            min-width: 900px
+            height: 60px
+            background-color: rgba(255,255,255,0.5)
+            padding: 0px 50px 0px 50px
+        .menu
+            list-style: none
+            padding-left: 0
+            margin: 0
+            height: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &__item
+                margin: 0
+                height: 100%
+                a
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    color: $main_second
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 1
+                    text-transform: uppercase
+                    text-decoration: none
+                    height: 100%
+                    padding: 0 15px
+                    +menu_hover
+
+            .social
+                display: none

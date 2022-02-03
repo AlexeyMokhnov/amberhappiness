@@ -1,0 +1,250 @@
+// ----------- 1200 --------------------
+// ----------- 1200 --------------------
+// ----------- 1200 --------------------
+// ----------- 1200 --------------------
+// ----------- 1200 --------------------
+
+@media (max-width: 1200px)
+    .container
+        max-width: 795px
+    .contacts
+        // background-color: $main_third
+        padding: 76px 0 30px 0
+        // +box_shadow_main_bottom
+        &__wrapper
+            // display: flex
+            justify-content: center
+        &__block
+            // width: 800px
+            width: 500px
+            min-height: 400px
+            // background-color: $light
+            padding-right: 145px
+            margin-bottom: 105px
+            // +box_shadow_main
+        &__map-frame
+            height: 400px
+            width: 400px
+            // padding: 25px
+            // background-color: $main_third
+            margin-left: -145px
+            margin-top: 105px
+            // +box_shadow_main
+        &__map
+            // height: 100%
+            // width: 100%
+        &__title
+            // color: $main
+            // font-size: 24px
+            // font-weight: 700
+            // text-transform: uppercase
+            margin: 30px 0 0 30px
+        &__address
+            margin: 45px 0 0 50px
+        &__subtitle
+            font-size: 18px
+            // font-weight: 700
+            // color: $main_second
+            // line-height: 1
+        &__tel
+            margin: 35px 0 0 50px
+        &__mail
+            margin: 32px 0 0 50px
+        &__tel-link,
+        &__mail-link,
+        &__address-link a
+            font-size: 16px
+            // color: $main_second
+            // text-decoration: none
+            // &:hover
+            //     text-decoration: underline
+    .call-form
+        margin-top: 140px
+    .delivery
+        display: flex
+        justify-content: center
+        padding-top: 100px
+        // &::after
+        //     content: ""
+        //     clear: both
+        //     display: block
+        &__photo-frame
+            // position: relative
+            // z-index: 1
+            // display: inline-block
+            max-width: 400px
+            max-height: 400px
+            // background-color: $main_third
+            padding: 12.5px
+        &__photo
+            // transform: scale(-1, 1)
+        &__description
+            // float: right
+            // position: relative
+            // z-index: 0
+            max-width: 420px
+            height: 400px
+            // background-color: $light
+            padding: 31px 25px 0 86px
+            margin: 100px 0 0 -65px
+            p
+                // position: relative
+                // z-index: 2
+                // color: $main_second
+                font-size: 18px
+                line-height: 30px
+                margin-top: 36px
+                &:nth-child(3)
+                    margin-top: 42px
+        &__title
+            width: 300px
+            // color: $main
+            // font-size: 24px
+            // font-weight: 700
+            // line-height: 36px
+            // text-transform: uppercase
+        &__paw
+            // position: absolute
+            // z-index: 1
+            bottom: 12px
+            right: 21px
+            width: 168px
+            height: auto
+            opacity: 0.3
+            // transform: scale(-1, 1)
+            // object-fit: contain
+    .main-form
+        margin-top: 73px
+        &__form
+            width: 726px
+        &__btn
+            bottom: 40px
+
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+@media (max-width: 991px)
+    .container
+        max-width: 768px
+    .contacts
+        &__map-frame
+            width: 373px
+    .delivery
+        &__photo
+            height: 100%
+            object-fit: cover
+    .main-form
+        &__form
+            width: 699px
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+@media (max-width: 767px)
+    .container
+        max-width: 795px
+    .contacts
+        padding: 36px 0 26px 0
+        &__wrapper
+            flex-direction: column
+            align-items: center
+        &__block
+            width: 363px
+            min-height: 275px
+            padding-right: 0px
+            padding-bottom: 20px
+            margin-bottom: 0px
+        &__map-frame
+            width: 363px
+            height: 275px
+            padding: 12.5px
+            margin-left: 0px
+            margin-top: 30px
+        &__title
+            margin: 15px 0 0 35px
+        &__subtitle
+            margin-bottom: 8px
+        &__address
+            margin: 13px 0 0 35px
+            &-link
+                line-height: 1.5
+        &__tel,
+        &__mail
+            margin: 12px 0 0 35px
+        &__tel-link
+            line-height: 2
+        &__mail-link
+            line-height: 1.5
+    .call-form
+        margin-top: 76px
+    .delivery
+        flex-direction: column
+        align-items: center
+        padding-top: 60px
+        &__photo-frame
+            max-width: 363px
+            max-height: 363px
+            padding: 12.5px
+        &__description
+            max-width: 363px
+            height: 363px
+            padding: 27px 40px 0 40px
+            margin: 25px 0 0 0px
+            text-align: center
+            p
+                font-size: 18px
+                line-height: 30px
+                margin-top: 22px
+                &:nth-child(3)
+                    margin-top: 38px
+        &__title
+            width: 300px
+            font-size: 18px
+            line-height: 24px
+    .main-form
+        &__form
+            width: 310px
+        &__policy
+            left: 50%
+            transform: translateX(-50%)
+
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+@media (max-width: 400px)
+    .contacts
+        &__block
+            width: 280px
+            min-height: 280px
+            padding-right: 10px
+        &__map-frame
+            width: 280px
+            height: 280px
+
+    .delivery
+        &__photo-frame
+            max-width: 280px
+            max-height: 280px
+        &__description
+            max-width: 280px
+            min-height: 280px
+            height: auto
+            padding: 27px 40px 20px 40px
+            p
+                font-size: 16px
+                line-height: 24px
+        &__title
+            width: auto
+            font-size: 16px
+            line-height: 24px
+    .main-form
+        &__form
+            width: 280px

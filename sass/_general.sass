@@ -1,0 +1,775 @@
+html
+    overflow-y: scroll
+// body
+//     background-image: url(../img/bg/main-bg.png)
+//     background-position: center calc( 100vh - 100px )
+//     background-repeat: no-repeat
+//     background-size: 100% 100%
+.no-scrolling
+    overflow: hidden
+    height: 100vh
+
+#p_prldr
+    background: $light
+    z-index: 20
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+img
+    width: 100%
+    object-fit: cover
+input[type='submit']
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+.swiper-container
+    width: auto
+    height: calc( 100vh - 100px )
+    max-height: 961px
+    overflow: hidden
+
+.swiper-pagination-bullet
+    width: 20px
+    height: 20px
+    background-color: #fff
+    opacity: 0.3
+    outline: none
+    &:hover
+        opacity: 0.9
+.swiper-pagination-bullet-active
+    background-color: #fff
+    opacity: 0.9
+.swiper-container-horizontal>.swiper-pagination-bullets
+    bottom: 61px
+    .swiper-pagination-bullet
+        margin: 0 15px
+.swiper-button-prev,
+.swiper-button-next
+    height: 69px
+    width: 50px
+    top: auto
+    bottom: 36px
+    padding: 140px 36% 36px 171px
+    outline: none
+    &::after
+        font-weight: 600
+        font-size: 69px
+        opacity: 0.6
+        color: #fff
+    &:hover
+        &::after
+            content: 'prev'
+            font-family: swiper-icons
+            opacity: 0.9
+.swiper-button-next
+    padding: 140px 171px 36px 36%
+    &:hover
+        &::after
+            content: 'next'
+            font-family: swiper-icons
+            opacity: 0.9
+.main-slider
+    .swiper-slide
+        position: relative
+        &-1
+            background-image: url("../img/main-slider/1-choose-dog3.png")
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            &__info
+                position: absolute
+                top: 180px
+                left: 144px
+        &__title
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5)
+            color: $main
+            font-family: "Montserrat", sans-serif
+            font-size: 150px
+            font-weight: 900
+            line-height: 1
+            text-align: left
+            text-transform: uppercase
+            letter-spacing: -15px
+            span
+                font-family: inherit
+                display: block
+        &__btn
+            margin-top: 80px
+            width: 400px
+            height: 80px
+            box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.5)
+            border-radius: 50px
+            background-color: $main_btn
+            text-decoration: none
+            text-transform: uppercase
+            display: flex
+            justify-content: center
+            align-items: center
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3)
+            color: $light
+            font-size: 30px
+            font-weight: 700
+            transition: 0.5s background-color
+            +main_btn_hover
+            &-text
+                opacity: 0.9
+        &-2
+            position: relative
+            background-image: url("../img/main-slider/2-course3.png")
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            &__info
+                position: absolute
+                top: 77px
+                right: 200px
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+            &__title
+                text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3)
+                color: $main_second
+                font-family: "Montserrat"
+                font-weight: 900
+                text-align: left
+                font-size: 100px
+
+                line-height: 1
+                text-align: right
+            &__subtitle
+                width: 706px
+                margin-top: 22px
+                text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3)
+                color: $main_second
+                font-family: "Montserrat"
+                font-weight: 900
+                font-size: 60px
+            .swiper-slide__btn
+                margin-top: 40px
+                background-color: $main_second_btn
+                color: $light
+                +main_second_btn_hover
+                .social__icon
+                    width: 30px
+                    fill: #fff
+                    margin-right: 10px
+                    &:hover>.use
+                        color: #fff
+                        border-color: #fff
+                        fill: #fff
+                &-discription
+                    color: $main_second
+                    font-size: 30px
+                    margin-top: 13px
+                    margin-right: 53px
+        &-3
+            background-image: url("../img/main-slider/3-our-dogs3.png")
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            .swiper-slide__title
+                letter-spacing: -11.25px
+            &__info
+                width: 638px
+                position: absolute
+                top: 145px
+                right: 158px
+                .swiper-slide__title
+                    text-align: right
+                .swiper-slide__btn
+                    margin-left: 237px
+                    margin-top: 69px
+.container
+    max-width: 1477px
+    margin: 0 auto
+    position: relative
+    padding: 0 20px
+.call-form
+    height: 68px
+    margin: 136px auto 146px auto
+    position: relative
+    display: inline-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__text
+        display: inline-block
+        color: $main_second
+        font-size: 36px
+        line-height: 1
+        min-width: 550px
+        span
+            display: block
+            margin-top: 13px
+            margin-left: 50px
+            color: $main_second
+            font-size: 24px
+            font-weight: 300
+            line-height: 1
+    &__input-phone,
+    &__btn
+        width: 400px
+        height: 60px
+        border-radius: 30px
+        border: 2px solid $main_second
+        +input_focus
+        +input_hover
+    &__input-phone
+        font-size: 18px
+        font-weight: 300
+        padding-left: 22px
+        margin-left: 3.2%
+    &__btn
+        background-color: $main_second
+        color: $light
+        font-size: 30px
+        font-weight: 300
+        margin-left: 2.7%
+        +pointer_hover
+    .main-form__error
+        position: absolute
+        top: 74px
+        left: 42%
+        margin-left: 0
+        transition: 0.3s all
+    input:valid:not(:focus):not(:placeholder-shown)
+        background-position: 95% 18px
+    input[type="submit"]:valid:not(:focus):not(:placeholder-shown)
+        color: $light
+        border: none
+        background-image: none
+
+.spitz-is
+    position: relative
+    margin-top: 147px
+    display: grid
+    grid-template-columns: 1fr 1fr minmax(250px, 350px) minmax(250px, 350px)
+    grid-template-rows: 1fr 1fr 60px 113px 350px 320px
+    grid-template-areas: "companion companion companion smart" "companion companion companion companion-photo" "companion companion companion btn" "empty empty empty empty" "resourcefull-photo-1 resourcefull-photo-1 resourcefull-discription-1 resourcefull-photo-2" "resourcefull-photo-1 resourcefull-photo-1 resourcefull-discription-2 resourcefull-discription-2"
+    // that code above is in shpizis.css becouse autoprefix does code without spaces between dots!
+    gap: 20px 20px
+    &__companion
+        grid-area: companion
+        position: relative
+        background-color: $main_third
+        +box_shadow_main
+        &-frame
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            width: 550px
+            height: 550px
+            background-color: $light
+            margin: 164px auto 0 124px
+            padding: 25px
+            +box_shadow_main
+        &-discription
+            position: relative
+            z-index: 1
+            width: 300px
+            min-height: 300px
+            background-color: $light
+            color: $main_second
+            font-size: 18px
+            text-align: center
+            line-height: 2
+            padding: 40px 30px 40px 30px
+            margin: -255px 0 0 500px
+            +box_shadow_main
+            h3
+                font-size: 24px
+                margin-bottom: 38px
+                line-height: 1
+    &__paw
+        position: absolute
+        top: 20%
+        right: 9%
+        width: 184px
+    &__title
+        position: absolute
+        top: 58px
+        left: 93px
+        color: $main_second
+        font-size: 36px
+        line-height: 1
+        z-index: 2
+    &__smart
+        &-frame
+            grid-area: smart
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 350px
+            width: 350px
+            background-color: $main_third
+            padding: 25px
+            +box_shadow_main
+        &-discription
+            position: relative
+            width: 100%
+            height: 100%
+            background-color: $light
+            color: $main_second
+            font-size: 18px
+            text-align: center
+            line-height: 2
+            padding: 43px 33px 96px 33px
+            +box_shadow_main
+            h3
+                font-size: 24px
+                margin-bottom: 57px
+                line-height: 1
+            &-paragraph
+                position: relative
+                z-index: 1
+        &-paw
+            position: absolute
+            right: 27px
+            bottom: 24px
+            z-index: 0
+            width: 96px
+        &-photo-frame
+            grid-area: companion-photo
+            background-color: $main_third
+            padding: 12.5px
+            height: 350px
+            width: 350px
+            +box_shadow_main
+            img
+                height: 100%
+    &__resourcefull
+        &-photo-1
+            grid-area: resourcefull-photo-1
+            background-color: $main_third
+            padding: 25px
+            +box_shadow_main
+            img
+                height: 100%
+        &-discription-1-frame,
+        &-discription-2-frame
+            background-color: $main_third
+            padding: 25px
+        &-discription-1-frame
+            grid-area: resourcefull-discription-1
+            width: 350px
+            +box_shadow_main
+        &-discription-1,
+        &-discription-2
+            position: relative
+            background-color: $light
+            padding: 44px 16px
+            color: $main_second
+            text-align: center
+            h3
+                font-size: 24px
+                line-height: 1
+                margin-bottom: 60px
+            p
+                font-size: 18px
+                line-height: 2
+        &-discription-1
+            &-paragraph
+                position: relative
+                z-index: 1
+            &-paw
+                position: absolute
+                bottom: 24px
+                right: 27px
+                z-index: 0
+                width: 96px
+        &-photo-2
+            grid-area: resourcefull-photo-2
+            background-color: $main_third
+            padding: 12.5px
+            +box_shadow_main
+
+        &-discription-2-frame
+            grid-area: resourcefull-discription-2
+            +box_shadow_main
+        &-discription-2
+            width: 100%
+            height: 100%
+            padding: 71px 54px 0 54px
+            p
+                max-width: 484px
+                display: inline-block
+.main-btn
+    display: flex
+    justify-content: center
+    align-items: center
+    grid-area: btn
+    width: 350px
+    height: 60px
+    border-radius: 30px
+    background-color: $main_third
+    color: $main_second
+    font-size: 30px
+    text-decoration: none
+    text-transform: uppercase
+    +box_shadow_main
+    &:hover
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5)
+.empty
+    grid-area: empty
+.character
+    margin-top: 150px
+    display: grid
+    grid-template-columns: 250px 280px 50px 280px minmax(100px, 522px)
+    grid-template-rows: 67px 250px 250px 350px
+    grid-template-areas: "character-title character-title character-title character-social character-social" "excellent-photo excellent-discription excellent-discription character-social character-social" "stars-photo stars-discription stars-discription character-social character-social" "artist-discription artist-discription artist-photo artist-photo character-paw"
+    gap: 20px 20px
+    color: $main_second
+    text-align: center
+    line-height: 30px
+    font-size: 18px
+    .main-btn
+        display: none
+    h3
+        color: $main
+        font-size: 18px
+        text-transform: uppercase
+        font-weight: 900
+        margin-bottom: 20px
+    &__title
+        grid-area: character-title
+        h2
+            font-size: 36px
+            font-weight: 400
+            line-height: 1
+            text-align: left
+    &__subtitle
+        font-size: 18px
+        line-height: 1
+        margin-top: 14px
+        font-weight: 400
+    &__excellent
+        &-photo-frame
+            grid-area: excellent-photo
+            padding: 12.5px
+            background-color: $light
+            +box_shadow_main
+        &-discription
+            grid-area: excellent-discription
+            background-color: $light
+            padding: 40px 15px
+            +box_shadow_main
+    &__stars
+        &-photo-frame
+            grid-area: stars-photo
+            padding: 12.5px
+            background-color: $light
+            +box_shadow_main
+        &-discription
+            grid-area: stars-discription
+            background-color: $light
+            padding: 40px 15px
+            +box_shadow_main
+
+    &__artist
+        &-photo-frame
+            grid-area: artist-photo
+            padding: 12.5px
+            background-color: $light
+            +box_shadow_main
+        &-discription
+            grid-area: artist-discription
+            background-color: $light
+            padding: 40px 55px
+            +box_shadow_main
+    &__social
+        grid-area: character-social
+        position: relative
+        background-color: $main_third
+        padding-right: 5%
+        +box_shadow_main
+        &-photo-frame
+            margin-top: 10%
+            margin-left: 10%
+            width: 350px
+            height: 350px
+            position: relative
+            z-index: 1
+            padding: 12.5px
+            background-color: $light
+            +box_shadow_main
+        &-discription
+            letter-spacing: -0.6px
+            position: relative
+            z-index: 2
+            margin-top: -75px
+            margin-left: 315px
+            max-width: 320px
+            min-height: 320px
+            background-color: $light
+            padding: 20px 10px 10px 10px
+            +box_shadow_main
+            h3
+                color: $main_second
+                text-transform: none
+                font-size: 24px
+        &-paw
+            position: absolute
+            top: 81px
+            right: 99px
+            width: 184px
+            z-index: 0
+    &__paw
+        grid-area: character-paw
+        text-align: left
+        img
+            width: 184px
+            margin: 81px auto auto 15%
+            transform: scale(-1, 1)
+.review-slider
+    padding-top: 97px
+    position: relative
+    &__title
+        font-weight: 900
+        font-size: 36px
+        text-transform: uppercase
+        color: $main
+        line-height: 1
+        margin-left: 616px
+    .swiper-container-review
+        // +20px w and h
+        width: 1167px
+        height: 470px
+        margin-left: auto
+        margin-right: auto
+        position: relative
+        overflow: hidden
+        list-style: none
+        padding: 0
+        z-index: 1
+        margin-left: 0
+        margin-top: 38px
+    .swiper-pagination-bullet
+        width: 15px
+        height: 15px
+    .swiper-container-horizontal>.swiper-pagination-bullets
+        bottom: 87px
+        width: auto
+        left: 758px
+        .swiper-pagination-bullet
+            margin: 0 10px
+    .swiper-button-prev,
+    .swiper-button-next
+        height: 48px
+        width: 28px
+        bottom: 0px
+        left: 0
+        padding: 200px 33px 262px 38px
+        &::after
+            font-size: 50px
+    .swiper-button-next
+        padding: 200px 38px 262px 33px
+        right: 0
+        left: auto
+    &__wrapper
+        background-color: $main_third
+        height: 381px
+        width: 100%
+        width: 1147px
+        display: flex
+        margin-top: 10px
+        margin-left: 10px
+        +box_shadow_main
+        &-paw
+            display: none
+    &__photo-frame
+        margin: 50px 0 auto 60px
+        width: 442px
+        height: 400px
+        background-color: $light
+        padding: 17.5px
+        +box_shadow_main
+    &__text
+        background-color: $light
+        width: 562px
+        height: 307px
+        color: $main_second
+        text-align: left
+        line-height: 33px
+        font-size: 18px
+        margin: 28px auto auto 20px
+        padding: 25px 20px 0 20px
+        +box_shadow_main
+        span
+            color: #ff0000
+    &__paw
+        width: 184px
+        position: absolute
+        top: 158px
+        right: 0
+.main-form
+    display: flex
+    justify-content: space-between
+    &__paw
+        width: 239.2px
+        height: 274.3px
+        margin-top: 150px
+    &__frame
+        width: 500px
+        background-color: $main_third
+        border-radius: 10px
+        padding: 74px 60px 69px 0px
+        display: flex
+        +box_shadow_main
+        .social
+            width: 100px
+            height: 370px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            background-color: $light
+            padding: 20px 0
+            border-radius: 0 10px 10px 0
+            margin-top: 20px
+            +box_shadow_main
+            a
+                margin-right: 0
+    &__form
+        position: relative
+        z-index: 1
+        width: 936px
+        height: 410px
+        background-color: $light
+        border-radius: 10px
+        padding: 62px 58px
+        margin-left: -622px
+        +box_shadow_main
+        h3,
+        h4
+            font-size: 30px
+            color: $main_second
+            line-height: 1
+            font-weight: 400
+        h4
+            font-size: 24px
+            margin-bottom: 50px
+            margin-top: 12px
+    &__info
+        display: inline-block
+        width: 320px
+    &__name,
+    &__phone,
+    &__textarea
+        width: 320px
+        height: 60px
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.3)
+        border: 1px solid $main_second
+        border-radius: 30px
+        background-color: #fdfdfd
+        padding-left: 17px
+        font-size: 18px
+        color: $main_second
+        &:hover
+            box-shadow: 0 0 7px 1px rgba(158, 158, 158, 0.3)
+        &:focus
+            color: $main_second
+            outline: none
+    &__phone
+        margin-top: 10px
+    &__textarea
+        float: right
+        width: 480px
+        height: 150px
+        resize: none
+        padding: 17px 15px
+        margin-left: 20px
+    &__policy
+        font-size: 12px
+        position: absolute
+        bottom: 26px
+        left: 68px
+        display: flex
+        justify-content: start
+        align-items: center
+        line-height: 14px
+        a
+            text-decoration: none
+            color: $main
+        span
+            padding-left: 5px
+
+    &__btn
+        width: 300px
+        height: 50px
+        border-radius: 25px
+        background-color: $main_third
+        color: $main_second
+        font-size: 24px
+        font-weight: 700
+        text-align: center
+        text-transform: uppercase
+        border: none
+        outline: none
+        margin: 68px 0 0 112px
+        +box_shadow_main
+        &:hover
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5)
+            cursor: pointer
+    input[type="submit"]:valid:not(:focus):not(:placeholder-shown)
+        color: $main_second
+        border: none
+        background-image: none
+    &__error
+        display: block
+        font-size: 12px
+        font-weight: 300
+        padding-top: 6px
+        padding-left: 18px
+        opacity: 0
+        line-height: 14px
+
+input:valid:not(:focus):not(:placeholder-shown),
+textarea:valid:not(:focus):not(:placeholder-shown)
+    color: $main
+    border: 1px solid $main
+    background-image: url('../icons/arrow2.png')
+    background-repeat: no-repeat
+    background-position: 280px 18px
+    background-size: 24px
+textarea:valid:not(:focus):not(:placeholder-shown)
+    background-image: none
+
+input:invalid:not(:focus):not(:placeholder-shown)
+    transition: 0.5s all
+    background: pink
+    & + .main-form__error
+        color: $main_second
+        opacity: 1
+        transition: 0.5s all
+.totop
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 50px
+    width: 50px
+    border: 2px solid $main
+    border-radius: 25px
+    font-size: 30px
+    color: $main
+    position: fixed
+    bottom: 20px
+    right: 20px
+    z-index: 3
+    opacity: 0.3
+    &:hover
+        cursor: pointer
+        opacity: 0.6
+        +box_shadow_main
+    span
+        display: block
+        height: 4px
+        width: 25px
+        background-color: $main
+        border-radius: 2px
+        &:nth-child(1)
+            transform: translateX(4.3px) translateY(-2px) rotate(-45deg)
+        &:nth-child(2)
+            transform: translateX(-4.3px) translateY(-2px) rotate(45deg)

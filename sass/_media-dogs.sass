@@ -1,0 +1,309 @@
+// ----------- 1200 --------------------
+// ----------- 1200 --------------------
+// ----------- 1200 --------------------
+// ----------- 1200 --------------------
+// ----------- 1200 --------------------
+
+@media (max-width: 1450px)
+    body
+        background-position: center 608px
+    .dogs
+        height: 608px
+        padding: 78px 0 29px 0
+        .container
+            max-width: 840px
+        &__content
+            width: 570px
+            height: 500px
+            &-item
+                padding: 21px 21px 24px 20px
+        &__photo-frame
+            max-width: 300px
+            height: 300px
+            padding: 12.5px
+        &__photo
+            height: 100%
+        &__ribbon-wrapper
+            top: 12.5px
+            left: 12.5px
+        &__ribbon
+            top: 45px
+            left: -84px
+            letter-spacing: -0.5px
+            font-size: 15px
+        &__info
+            width: 220px
+            font-size: 16px
+            margin-left: 19px
+            margin-top: 14px
+        &__description
+            letter-spacing: -0.3px
+        &__character-frame
+            bottom: -159px
+            right: -219px
+            width: 250px
+            height: 250px
+            padding: 12.5px
+        &__character-text
+            display: flex
+            align-items: center
+            font-size: 16px
+            line-height: 24px
+            padding: 5px 12px
+            overflow: hidden
+        &__paw
+            right: 0px
+            bottom: auto
+            top: -95px
+            width: 60px
+            height: auto
+        &__title
+            font-size: 16px
+        &__pedigree,
+        &__instagram-wrapper
+            position: absolute
+            left: 52px
+            font-size: 18px
+            height: 50px
+            width: 200px
+            margin-left: 0px
+            margin-top: 0px
+        &__pedigree
+            top: 341px
+        &__instagram-wrapper
+            top: 419px
+            margin-top: 0px
+        &__tabs
+        &-slider
+
+            .swiper-container-dogs
+                width: 210px
+                height: 500px
+            .dogs__tabs-item
+                width: 160px
+                height: 160px
+    .bnr.container
+        max-width: 840px
+    .bnr
+        margin-top: 62px
+        &__wrapper
+            height: 246px
+            padding: 13px
+        &__frame
+            padding: 13px
+        &__bg
+            background-size: auto 100%
+        &__title
+            font-size: 24px
+            line-height: 36px
+            margin-top: 20px
+        .main-btn
+            display: flex
+            width: 200px
+            height: 40px
+            font-size: 15px
+            margin-top: 37px
+            align-self: center
+
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+@media (max-width: 991px)
+    .dogs
+        &__character-frame
+            right: -158px
+        &__pedigree,
+        &__instagram-wrapper
+            left: 19px
+    .bnr
+        &__info
+            width: 35%
+        &__bg
+            background-position-x: -70px
+
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+@media (max-width: 767px)
+    .dogs
+        height: calc( 100vh - 100px )
+        min-height: 620px
+        max-height: 740px
+        padding: 4% 0 20% 0
+        &__wrapper
+            height: 100%
+            position: relative
+        .swiper-container-dogs-content
+            height: 100%
+            .swiper-wrapper
+                display: flex
+                .swiper-slide
+                    position: relative
+                    top: auto
+                    left: auto
+        &__content
+            position: static
+            min-width: 363px
+            max-width: 400px
+            height: 100%
+            margin: 0 auto
+            overflow: hidden
+            &-item
+                position: static
+                left: auto
+                top: auto
+                opacity: 1
+                transform: none
+                padding: 0
+                flex-direction: column
+                align-items: center
+        .active
+            transition: all 0s ease 0s
+            opacity: 1
+            transform: none
+            position: static
+        .swiper-button-prev,
+        .swiper-button-next
+            display: flex
+            bottom: -76px
+            &::after
+                font-size: 48px
+        .swiper-button-next
+            padding: 50px 10% 36px 32%
+        .swiper-button-prev
+            padding: 50px 32% 36px 10%
+        .swiper-pagination
+            display: block
+            font-size: 36px
+            font-weight: 900
+            color: $light
+            bottom: -67px
+        &__photo-frame
+            order: 2
+            max-width: 338px
+            min-width: 280px
+            max-height: 275px
+            padding: 0
+            margin-top: 10px
+        &__ribbon-wrapper
+            top: 0
+            left: 0
+        &__character-frame
+            position: static
+            right: auto
+            bottom: auto
+            height: auto
+            width: 100%
+            padding: 0
+            margin: 0 auto
+            background-color: transparent
+        &__character-text
+            margin-top: 10px
+            font-size: 14px
+            line-height: 18px
+            padding: 0
+            letter-spacing: -0.3px
+        &__info
+            order: 1
+            margin: 0 auto
+            width: 100%
+        &__title
+            text-align: center
+            font-size: 14px
+        &__description
+            text-align: center
+            font-size: 14px
+            line-height: 18px
+        &__pedigree,
+        &__instagram-wrapper
+            width: 170px
+            font-size: 16px
+            top: auto
+            bottom: 20px
+            letter-spacing: -1px
+        &__pedigree
+            left: 10px
+        &__instagram-wrapper
+            left: 190px
+        &__tabs
+            display: none
+    .bnr
+        margin-top: 62px
+        &__wrapper
+            height: 363px
+            padding: 12.5px
+        &__frame
+            padding: 12.5px
+        &__bg
+            background-position-x: -137px
+        &__info
+            width: 100%
+
+        &__title
+            line-height: 24px
+            margin-top: 10px
+            align-items: center
+            span:last-child
+                align-self: auto
+        .main-btn
+            display: flex
+            width: 150px
+            height: 60px
+            border-radius: 30px
+            font-size: 18px
+            margin-top: 175px
+            span:last-child
+                display: none
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+@media (max-width: 400px)
+    .dogs
+        height: calc( 100vh - 100px )
+        min-height: 320px
+        &__wrapper
+            height: calc( 100vh - 170px )
+        &__content
+            min-width: 300px
+            &-item
+                height: 100%
+        .swiper-button-prev,
+        .swiper-button-next
+            bottom: -63px
+            &::after
+                font-size: 40px
+        .swiper-pagination
+            font-size: 32px
+            bottom: -48px
+        &__photo-frame
+            max-width: 280px
+            min-height: 140px
+            max-height: 35%
+        &__ribbon-wrapper
+            width: 130px
+            height: 130px
+
+        &__ribbon
+            height: 30px
+            line-height: 30px
+            top: 34px
+            left: -105px
+            font-size: 11px
+        &__pedigree,
+        &__instagram-wrapper
+            font-size: 14px
+            width: 138px
+        &__pedigree
+            left: 10px
+        &__instagram-wrapper
+            left: auto
+            right: 10px

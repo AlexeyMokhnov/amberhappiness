@@ -1,0 +1,378 @@
+// ----------- 1200 --------------------
+// ----------- 1200 --------------------
+// ----------- 1200 --------------------
+// ----------- 1200 --------------------
+// ----------- 1200 --------------------
+
+@media (max-width: 1200px)
+    .container
+        max-width: 745px
+    .about
+        padding-top: 74px
+        padding-bottom: 23px
+        box-shadow: none
+        &__wrapper
+            position: relative
+            grid-template-rows: minmax(200px, 225px) minmax(200px, 225px) 40px
+            grid-template-areas: "health photo-frame-1 fiance" "photo-frame-2 open photo-frame-3" "buttons buttons buttons"
+            gap: 15px
+        &__health
+            grid-area: health
+            padding: 12.5px
+            height: 225px
+            &-discription
+                position: static
+                padding: 0 4px
+            &-paw
+                left: -110px
+                bottom: 109px
+        &__title
+            letter-spacing: -0.4px
+            font-size: 16px
+            padding-top: 19px
+        &__text
+            margin-top: 25px
+            font-size: 16px
+        &__photo-frame-1
+            grid-area: photo-frame-1
+        &__fiance
+            grid-area: fiance
+            padding: 12.5px
+            &-discription
+                padding: 0 4px
+        &__photo-frame-2
+            grid-area: photo-frame-2
+            height: 225px
+            margin-top: 15px
+        &__open
+            grid-area: open
+            padding: 12.5px
+            &-discription
+                padding: 0 4px
+                letter-spacing: -0.5px
+        &__photo-frame-3
+            grid-area: photo-frame-3
+        &__buttons
+            grid-area: buttons
+            .main-btn
+                display: flex
+                width: 250px
+                height: 40px
+                font-size: 18px
+                &:first-child
+                    margin-right: 20px
+    .achievements
+        padding-top: 85px
+        &__title
+            font-size: 24px
+            span
+                font-size: 30px
+        &__number
+            font-size: 48px
+        &__text
+            font-size: 18px
+    .delivery
+        padding-top: 96px
+        &__photo
+            width: 360px
+            height: 240px
+        &__info
+            width: 345px
+        &__square
+            width: 170px
+            height: 200px
+        &__description
+            margin-left: 30px
+            margin-top: 70px
+        &__title
+            width: auto
+            font-size: 20px
+        &__text
+            font-size: 18px
+            margin-top: 19px
+        &__country
+            margin-top: 119px
+            .delivery__info
+                width: 345px
+            .delivery__description
+                margin-right: 30px
+                margin-top: 52px
+            .delivery__text
+                display: inline-block
+            .delivery__photo
+                background-image: url(../img/about/dog-in-the-car-1080.png)
+    .footer
+        margin-top: 73px
+
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+// --------------------------991------------------------------
+// @media (max-width: 991px)
+
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+// ------------------767------------------------------------
+@media (max-width: 767px)
+    .about
+        padding-top: 0px
+        padding-bottom: 10 px
+        background-color: transparent
+        &__wrapper
+            position: relative
+            grid-template-columns: 100%
+            justify-items: center
+            grid-template-rows: 542px 225px 146px 363px 225px 140px
+            grid-template-areas: "mobile-wrapper" "photo-frame-1" "fiance" "photo-frame-3" "open" "buttons" "buttons"
+            gap: 20px
+        &__wrapper.container
+            max-width: 100%
+            padding: 0
+        &__mobile-wrapper
+            grid-area: mobile-wrapper
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 100%
+            background-color: $main_third
+            padding-top: 28px
+            padding-bottom: 20px
+        &__health
+            order: 2
+            position: relative
+            z-index: 1
+            margin-top: -56px
+            width: 225px
+            padding: 0px
+            margin-left: 138px
+            &-discription
+                padding: 0 4px
+                background-color: $light
+            &-paw
+                left: -128px
+                bottom: 22px
+                width: 99px
+        &__photo-frame-1
+            grid-area: photo-frame-1
+            width: 225px
+            position: relative
+            z-index: 0
+            margin-right: 138px
+        &__fiance
+            grid-area: fiance
+            position: relative
+            z-index: 1
+            width: 225px
+            margin-top: -79px
+            margin-left: 138px
+        &__paws
+            display: block
+            position: absolute
+            z-index: 0
+            top: 589px
+            left: 50%
+            transform: translateX(-50%)
+            width: 332px
+            height: 350px
+        &__photo-frame-2
+            order: 1
+            position: relative
+            z-index: 0
+            width: 325px
+            height: 325px
+            margin-top: 0
+            margin-right: 38px
+        &__open
+            grid-area: open
+            width: 363px
+            .about__title
+                width: 250px
+                margin: 0 auto
+            &-discription
+                padding: 0 30px
+                letter-spacing: 0px
+        &__photo-frame-3
+            grid-area: photo-frame-3
+            width: 363px
+        &__buttons
+            grid-area: buttons
+            display: flex
+            flex-direction: column
+            justify-content: start
+            .main-btn
+                display: flex
+                height: 60px
+                border-radius: 30px
+                &:first-child
+                    margin-right: 0px
+                    margin-bottom: 20px
+    .achievements
+        padding-top: 0px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__title
+            font-size: 18px
+            width: 280px
+            margin: 0 auto
+            span
+                font-size: 24px
+        &__items
+            flex-direction: column
+            margin-top: 30px
+
+        &__item
+            justify-content: start
+            margin-top: 15px
+            &:first-child
+                margin-top: 0px
+        &__number
+            font-size: 30px
+            margin-top: 3px
+        &__text
+            font-size: 16px
+    .delivery.container
+        padding: 0
+    .delivery
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__city
+            position: relative
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding-top: 36px
+            .delivery__paw
+                top: 61px
+                left: 2%
+            .delivery__photo
+                margin-left: 121px
+        &__paw
+            display: block
+            width: 88px
+            height: auto
+            position: absolute
+        &__photo
+            position: relative
+            z-index: 1
+            width: 240px
+        &__info
+            margin-top: -43px
+            width: 363px
+        &__square
+            width: 70%
+            height: 204px
+            z-index: 0
+        &__description
+            margin-left: 16%
+            margin-top: 50px
+        &__title
+            font-size: 20px
+        &__text
+            margin-top: 19px
+        &__country
+            display: flex
+            flex-direction: column
+            align-items: center
+            position: relative
+            margin-top: 68px
+            width: 363px
+            .delivery__paw
+                top: 36px
+                right: 0%
+                transform: scale(-1, 1)
+            .delivery__photo
+                align-self: flex-start
+                order: 1
+                background-image: url(../img/about/dog-in-the-car-400.png)
+            .delivery__info
+                margin-top: 20px
+                padding-right: 15%
+            .delivery__square
+                top: -62px
+                transform: none
+                height: 305px
+            .delivery__info
+                order: 2
+            .delivery__description
+                margin-right: 0px
+                margin-top: 0px
+            .delivery__text
+                display: inline-block
+                width: 90%
+    .footer
+        margin-top: 67px
+
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+// ------------------400------------------------------------
+@media (max-width: 400px)
+    body
+        body
+            background-position: center 500px
+    .about
+        &__wrapper
+            grid-template-rows: 442px 190px 123px 290px 225px 140px
+        &__health
+            width: 190px
+            height: 190px
+            margin-left: 100px
+            &-paw
+                left: -102px
+                bottom: 10px
+        &__title
+            font-size: 14px
+            padding-top: 13px
+        &__text
+            font-size: 14px
+            margin-top: 10px
+        &__photo-frame-1
+            width: 190px
+            margin-right: 100px
+        &__fiance
+            width: 190px
+            margin-top: -67px
+            margin-left: 100px
+            .about__title
+                padding-top: 7px
+        &__paws
+            top: 458px
+            left: 50%
+            transform: translateX(-50%)
+            width: 312px
+            height: 329px
+        &__photo-frame-2
+            width: 225px
+            height: 225px
+            margin-right: 70px
+        &__open
+            width: 290px
+            .about__title
+                width: auto
+        &__photo-frame-3
+            width: 290px
+    .achievements
+        &__items
+            margin-left: -23px
+    .delivery
+        &__city
+            .delivery__square
+                height: 245px
+            .delivery__text
+                padding-right: 15px
+            .delivery__paw
+                top: -162px
+                left: 60%
+        &__country
+            padding-left: 20px
+            .delivery__square
+                height: 305px
